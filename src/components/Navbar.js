@@ -4,44 +4,33 @@ import { PaperClipIcon } from "@heroicons/react/solid";
 import {Animated} from "react-animated-css";
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faSpotify } from '@fortawesome/free-brands-svg-icons';
+import { socials } from "../data";
 
 export default function Navbar() {
+  function addBounce(e) {
+    e.target.classList.add('animate-bounce');
+    // e.target.childNodes[0].classList.add('animate-bounce');
+  }
+  function removeBounce(e) {
+    e.target.classList.remove('animate-bounce');
+    // e.target.childNodes[0].classList.remove('animate-bounce');
+  }
   return (
     <header className="bg-white md:sticky top-0 z-10">
-      <div className="fixed left-0 bottom-0 z-10 text-white m-4 flex flex-col items-center justify-end">
-        <Animated animationIn="fadeInLeft" isVisible={true}>
-          <a
-            href="https://github.com/riverdigger"
-            target="_blank">
-            <FontAwesomeIcon icon={faGithub} size="2x" className="hover:text-black mb-2" />
-          </a>
-        </Animated>
-        <Animated animationIn="fadeInLeft" isVisible={true}>
-          <a
-            href="https://www.linkedin.com/in/niallminer/"
-            target="_blank">
-            <FontAwesomeIcon icon={faLinkedin} size="2x" className="hover:text-blue-400 mb-2" />
-          </a>
-        </Animated>
-        <Animated animationIn="fadeInLeft" isVisible={true}>
-          <a
-            href="https://www.instagram.com/niallmino/"
-            target="_blank">
-            <FontAwesomeIcon icon={faInstagram} size="2x" className="hover:text-pink-400 mb-2" />
-          </a>
-        </Animated>
-        <Animated animationIn="fadeInLeft" isVisible={true}>
-          <a
-            href="https://open.spotify.com/artist/4vtCqwB29gswN0fEKFRdCA?si=EXm50OzNQFus1d7Dd4pznA&dl_branch=1"
-            target="_blank">
-            <FontAwesomeIcon icon={faSpotify} size="2x" className="hover:text-green-400 mb-2" />
-          </a>
-        </Animated>
-      </div>
+      <ul className="fixed left-0 top-0 h-screen z-10 text-white m-4 flex flex-col items-center justify-center">
+        {socials.map((social) => (
+          <li className={"hover:" + social.color + " mb-4"} onMouseLeave={ removeBounce }>
+            <Animated animationIn="fadeInLeft" isVisible={true}>
+              <a
+                href={social.href}
+                target="_blank"
+                >
+                <FontAwesomeIcon icon={social.icon} size="2x" />
+              </a>
+            </Animated>
+          </li>
+        ))}
+      </ul>
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a href="#about">
           <img
@@ -69,7 +58,7 @@ export default function Navbar() {
         <a
           href="./resume_niall_miner.pdf"
           target="_blank"
-          className="text-white inline-flex items-center bg-green-400 border-0 py-1 px-3 focus:outline-none hover:bg-green-500 rounded text-base mt-4 md:mt-0 shadow-md">
+          className="inline-flex items-center text-white bg-green-400 transform -skew-x-12 px-3 hover:bg-green-500 text-lg">
           Resume
           <PaperClipIcon className="w-4 h-4 ml-1" />
         </a>

@@ -1,3 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faSpotify } from '@fortawesome/free-brands-svg-icons';
+
 export const projects = [
   {
     title: "React Reserve",
@@ -57,4 +63,31 @@ export const skills = [
   "Node",
   "GraphQL",
   "Material UI",
+];
+
+export const socials = [
+  {
+    name: "GitHub",
+    href: "https://github.com/riverdigger",
+    color: "text-black",
+    icon: faGithub,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/niallminer/",
+    color: "text-blue-400",
+    icon: faLinkedin,
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/niallmino/",
+    color: "text-red-400",
+    icon: faInstagram,
+  },
+  {
+    name: "Spotify",
+    href: "https://open.spotify.com/artist/4vtCqwB29gswN0fEKFRdCA?si=EXm50OzNQFus1d7Dd4pznA&dl_branch=1",
+    color: "text-green-400",
+    icon: faSpotify,
+  },
 ];

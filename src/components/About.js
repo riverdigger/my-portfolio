@@ -12,13 +12,25 @@ import { ArrowRightIcon } from "@heroicons/react/solid";
 export default function About() {
   return (
     <section id="about" className="h-screen gradient">
-      <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center justify-center h-full">
+      <div className="container mx-auto flex px-10 pb-20 md:flex-row flex-col items-center justify-center h-full">
         <div className="lg:flex-grow flex flex-col mb-16 md:mb-0 items-start text-left">
         <Animated animationIn="fadeInUp" isVisible={true}>
           <p className="text-2xl font-medium text-white bg-white bg-opacity-20 transform -skew-x-12 px-3">// Hi I'm</p>
         </Animated>
           <div className="flex flex-col justify-start items-center my-7">
-            <p className="italic font-bold sm:text-5x; text-9xl mx-4 font-large text-white">NIALL MINER</p>
+            <div className="flex justify-content items-center mx-4">
+            <img
+              className="object-cover object-center rounded h-24"
+              alt="niall miner"
+              src="./logo_bracket_left.png"
+            />
+            <p className="italic font-bold sm:text-5x; text-9xl font-large text-white">NIALL MINER</p>
+            <img
+              className="object-cover object-center rounded h-24"
+              alt="niall miner"
+              src="./logo_bracket_right.png"
+            />
+            </div>
             {/*<div className="flex items-center justify-between">
               <div className="flex flex-row items-center justify-start italic text-white mr-7">
                 <CodeIcon className="w-10" />
@@ -41,7 +53,7 @@ export default function About() {
           <div className="flex justify-center shadow-md">
             <a
               href="#contact"
-              className="inline-flex items-center text-white bg-gray-900 bg-opacity-20 transform -skew-x-12 px-3 hover:bg-gray-800 text-lg">
+              className="inline-flex items-center text-white bg-gray-900 bg-opacity-20 transform -skew-x-12 px-3 hover:bg-gray-800 text-xl">
               Let's Build Something
               <ArrowRightIcon className="w-4 h-4 ml-1" />
             </a>
