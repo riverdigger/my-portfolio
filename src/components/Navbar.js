@@ -17,9 +17,14 @@ export default function Navbar() {
   }
   return (
     <header className="bg-white md:sticky top-0 z-10">
-      <ul className="fixed left-0 top-0 h-screen z-10 text-white m-4 flex flex-col items-center justify-center">
+      <ul className="fixed left-0 top-0 h-screen z-10 m-4 flex flex-col items-center justify-center">
+        <li className="mb-4 text-white">
+          <Animated animationIn="fadeInLeft" isVisible={true}>
+            <div className="h-6 md:border-l md:border-white"></div>
+          </Animated>
+        </li>
         {socials.map((social) => (
-          <li className={"hover:" + social.color + " mb-4"} onMouseLeave={ removeBounce }>
+          <li className={"hover:" + social.color + " mb-4 text-white"}>
             <Animated animationIn="fadeInLeft" isVisible={true}>
               <a
                 href={social.href}
@@ -30,6 +35,11 @@ export default function Navbar() {
             </Animated>
           </li>
         ))}
+        <li className="mb-4 text-white">
+          <Animated animationIn="fadeInLeft" isVisible={true}>
+            <div className="h-6 md:border-l md:border-white"></div>
+          </Animated>
+        </li>
       </ul>
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a href="#about">
