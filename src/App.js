@@ -14,15 +14,15 @@ import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
 
 export default function App() {
-  
+
   return (
     <main className="text-black bg-blue-500 body-font">
       <Navbar />
       <About />
       <Projects />
-      <Skills />
+      {/*<Skills />
       <Testimonials />
-      <Contact />
+      <Contact />*/}
     </main>
   );
 }
