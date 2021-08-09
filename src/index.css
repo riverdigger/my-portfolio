@@ -12,6 +12,9 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.grow { transition: all .7s ease-in-out; }
+.grow:hover { transform: scale(1.05); }
+
 .gradient {
   /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
   background: linear-gradient(-45deg, #ffed76, #ffed76, #e54b4b, #507dbc, #507dbc, #69c677, #69c677);
