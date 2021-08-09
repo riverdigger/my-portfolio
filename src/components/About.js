@@ -22,10 +22,10 @@ export default function About() {
                     alt="niall miner"
                     src="./logo_bracket_left.png"
                   />
-                  <p className="font-bold md:text-9xl sm:text-8xl text-7xl text-white">NIALL&nbsp;</p>
+                  <p className="font-bold md:text-9xl sm:text-8xl text-7xl text-white md:not-italic italic">NIALL&nbsp;</p>
                 </div>
                 <div className="flex items-center">
-                  <p className="font-bold md:text-9xl sm:text-8xl text-7xl text-white">MINER</p>
+                  <p className="font-bold md:text-9xl sm:text-8xl text-7xl text-white md:not-italic italic">MINER</p>
                   <img
                     className="object-cover object-center rounded h-24"
                     alt="niall miner"

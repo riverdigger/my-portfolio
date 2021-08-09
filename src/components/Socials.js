@@ -21,7 +21,7 @@ export default function Socials() {
                 href={social.href}
                 target="_blank"
                 >
-                <FontAwesomeIcon icon={social.icon} size="2x" className="shadow-svg" />
+                <FontAwesomeIcon icon={social.icon} size="2x" className="lg:shadow-svg" />
               </a>
             </Animated>
           </li>
