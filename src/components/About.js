@@ -20,7 +20,7 @@ export default function About() {
                 alt="niall miner"
                 src="./logo_bracket_left.png"
               />
-              <p className="italic font-bold sm:text-5x; text-9xl font-large text-white">NIALL MINER</p>
+              <p className="font-bold sm:text-5x; text-9xl font-large text-white">NIALL MINER</p>
               <img
                 className="object-cover object-center rounded h-24"
                 alt="niall miner"
