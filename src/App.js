@@ -12,16 +12,18 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
+import Socials from "./components/Socials";
 
 export default function App() {
   return (
-    <main className="text-black bg-blue-500 body-font">
+    <main className="text-black bg-white body-font">
       <Navbar />
       <About />
       <Projects />
       {/*<Skills />
       <Testimonials />
       <Contact />*/}
+      <Socials />
     </main>
   );
 }

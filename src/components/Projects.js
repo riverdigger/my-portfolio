@@ -17,40 +17,40 @@ export default function Projects() {
         </div>
         <div className="flex flex-col text-white /*bg-white rounded-lg*/">
           {projects.map((project, i) => (
-            <div className="flex items-center relative h-96 my-14">
+            <div className="flex items-center flex-col md:flex-row relative md:h-96 bg-white md:bg-transparent rounded-lg md:rounded-none md:my-14 mb-14">
             <Fade>
               <a
                 href={project.link}
                 target="_blank"
-                className={"w-3/5 absolute shadow-lg h-full mx-2" + (i % 2 == 0 ? " right-14" : " left-12 ")}>
+                className={"md:w-3/5 w-full md:absolute shadow-lg h-full mx-2" + (i % 2 == 0 ? " md:right-14" : " md:left-12 ")}>
                   <img
                     alt="gallery"
-                    className={"w-full object-cover object-center rounded-lg h-full inset-0 absolute"}
+                    className={"w-full object-cover object-center md:rounded-lg rounded-t-lg h-full md:inset-0 md:absolute"}
                     src={project.image}
                   />
                 <div className={"w-full rounded-lg h-full bg-white opacity-70 /*hover:opacity-0*/ inset-0 absolute"}></div>
               </a>
               </Fade>
-              <div className={"flex flex-col items-center justify-center w-2/5 h-full absolute grow" + (i % 2 == 0 ? " left-12" : " right-14")}>
-              <Pulse>
-                <div className="w-full flex items-end justify-between">
-                  <h1 className="text-3xl font-bold text-gray-900">
+              <div className={"flex flex-col items-center justify-center w-full md:w-2/5 h-full md:absolute grow z-10 md:z-auto bg-white md:bg-transparent rounded-lg md:rounded-none" + (i % 2 == 0 ? " md:left-12" : " md:right-14")}>
+                <div className="w-full flex items-end justify-between bg-white md:bg-transparent rounded-t-lg md:rounded-none mb-2 p-2 md:mb-0 md:p-0 flex-wrap xl:flex-nowrap">
+                  <h1 className="xl:text-3xl text-2xl font-bold text-gray-900">
                     <FontAwesomeIcon icon={project.icon} className="mr-2" />
                     {project.title}
                   </h1>
                   <h1 className="text-xl italic text-gray-900">{project.subtitle}</h1>
                 </div>
+                <Pulse>
                 <ul className={"text-left text-white rounded-md px-4 py-2 shadow-md w-full" + (i % 4 == 0 ? " bg-red-400" : "" ) + (i % 4 == 1 ? " bg-green-500" : "" ) + (i % 4 == 2 ? " bg-indigo-500" : "" ) + (i % 4 == 3 ? " bg-yellow-500" : "" )}>
                 {project.description.map((description) => (
                   <li><span className={"mr-2 font-bold" + (i % 4 == 0 ? " text-red-600" : "" ) + (i % 4 == 1 ? " text-green-700" : "" ) + (i % 4 == 2 ? " text-indigo-700" : "" ) + (i % 4 == 3 ? " text-yellow-700" : "" )}>></span>{description}</li>
                 ))}
                 </ul>
-                <div className="flex w-full justify-center items-center mt-2">
+                </Pulse>
+                <div className="flex w-full justify-center items-center my-2 rounded-b-lg bg-white md:rounded-none md:bg-transparent">
                   {project.tags.map((tag) => (
                     <div className="text-gray-900 w-1/4 mx-2">{tag}</div>
                   ))}
                 </div>
-                </Pulse>
               </div>
             </div>
           ))}

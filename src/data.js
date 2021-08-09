@@ -4,10 +4,10 @@ import { faCode, faGamepad, faPhotoVideo, faRocket } from '@fortawesome/free-sol
 
 export const projects = [
   {
-    title: "Website Developer",
+    title: "Ruby Developer",
     subtitle: "WellFence",
     description: [
-      "Create functionality and design of entire web app that is used by ops center and clients",
+      "Created functionality and design of entire web app that is used by ops center and clients",
       "Track user information and activity for well locations across the Permian Basin",
       "Increased automation and improved UI/UX",
       "Utilized AWS Buckets, REST APIs, Twilio, and AJAX Charts",
