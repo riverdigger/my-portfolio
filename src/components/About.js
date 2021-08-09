@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section id="about" className="h-screen gradient">
       <div className="container mx-auto flex px-10 pb-20 md:flex-row flex-col items-center justify-center h-full">
-        <div className="lg:flex-grow flex flex-col mb-16 md:mb-0 lg:items-start items-center text-left">
+        <div className="lg:flex-grow flex flex-col mb-16 md:mb-0 lg:items-start items-center text-left ml-4">
           <Animated animationIn="fadeInUp" isVisible={true}>
             <p className="text-2xl font-medium text-white bg-white bg-opacity-20 transform md:-skew-x-12 md:rounded-none rounded-md md:shadow-none shadow-md md:px-3 px-2">// Nice to meet you, I'm</p>
           </Animated>

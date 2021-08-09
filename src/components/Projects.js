@@ -31,7 +31,7 @@ export default function Projects() {
                 <div className={"w-full rounded-lg h-full bg-white opacity-70 /*hover:opacity-0*/ inset-0 absolute"}></div>
               </a>
               </Fade>
-              <div className={"flex flex-col items-center justify-center w-full md:w-2/5 h-full md:absolute grow z-10 md:z-auto bg-white md:bg-transparent rounded-lg md:rounded-none" + (i % 2 == 0 ? " md:left-12" : " md:right-14")}>
+              <div className={"flex flex-col items-center justify-center w-full xl:w-2/5 md:w-7/12 h-full md:absolute grow z-10 md:z-auto bg-white md:bg-transparent rounded-lg md:rounded-none" + (i % 2 == 0 ? " md:left-12" : " md:right-14")}>
                 <div className="w-full flex items-end justify-between bg-white md:bg-transparent rounded-t-lg md:rounded-none mb-2 p-2 md:mb-0 md:p-0 flex-wrap xl:flex-nowrap">
                   <h1 className="xl:text-3xl text-2xl font-bold text-gray-900">
                     <FontAwesomeIcon icon={project.icon} className="mr-2" />
