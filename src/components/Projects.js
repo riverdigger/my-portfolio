@@ -28,7 +28,7 @@ export default function Projects() {
                     className={"w-full object-cover object-center rounded-lg h-full inset-0 absolute"}
                     src={project.image}
                   />
-                <div className={"w-full rounded-lg h-full bg-white opacity-70 hover:opacity-0 inset-0 absolute"}></div>
+                <div className={"w-full rounded-lg h-full bg-white opacity-70 /*hover:opacity-0*/ inset-0 absolute"}></div>
               </a>
               </Fade>
               <div className={"flex flex-col items-center justify-center w-2/5 h-full absolute grow" + (i % 2 == 0 ? " left-12" : " right-14")}>

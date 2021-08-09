@@ -42,7 +42,8 @@ export const projects = [
     title: "Media Developer",
     subtitle: "Trefny Center",
     description: [
-      "Renewed the department’s website with a whole new design and functionality, while collaborating with faculty to receive feedback on user experience. Improved the quality of teaching that the faculty can provide at Colorado School of Mines by producing supplemental instructional videos and graphics. Collaborated with faculty to help them achieve a higher productivity and further their teaching courses.",
+      "Renewed the department’s website with a whole new UI/UX with user feedback",
+      "Improved the quality of teaching at Colorado School of Mines through supplemental instructional videos and graphics",
     ],
     image: "./trefnycenter-1.gif",
     link: "https://trefnycenter.mines.edu/",
@@ -57,7 +58,8 @@ export const projects = [
     title: "Software Intern",
     subtitle: "Deep Space Systems",
     description: [
-      "Constructed and tested hardware kits that will later be used as final products on the Orion Spacecraft and troubleshooted software problems by controlling cameras remotely through a Linux terminal. Used automation in Linux environments that created and ran bash scripts for command line interaction to run tests and collect results.",
+      "Constructed and tested hardware kits to be used on the Orion Spacecraft",
+      "Used automation in Linux environments to create and run bash scripts for command line interaction to run tests and collect camera data.",
     ],
     image: "./deepspacesystems-1.gif",
     link: "https://www.deepspacesystems.com/",
