@@ -30,7 +30,7 @@ export default function Navbar() {
                 href={social.href}
                 target="_blank"
                 >
-                <FontAwesomeIcon icon={social.icon} size="2x" />
+                <FontAwesomeIcon icon={social.icon} size="2x" className="shadow-svg" />
               </a>
             </Animated>
           </li>

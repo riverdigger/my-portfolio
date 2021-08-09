@@ -1,38 +1,72 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram, faSpotify } from '@fortawesome/free-brands-svg-icons';
+import { faCode, faGamepad, faPhotoVideo, faRocket } from '@fortawesome/free-solid-svg-icons';
 
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+    title: "Website Developer",
+    subtitle: "WellFence",
+    description: [
+      "Create functionality and design of entire web app that is used by ops center and clients",
+      "Track user information and activity for well locations across the Permian Basin",
+      "Increased automation and improved UI/UX",
+      "Utilized AWS Buckets, REST APIs, Twilio, and AJAX Charts",
+    ],
+    image: "./wellfence-1.gif",
+    link: "https://wellfence.com",
+    tags: [
+      "Ruby",
+      "PostgreSQL",
+      "FullStack",
+    ],
+    icon: faCode,
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
+    title: "QA Tester",
+    subtitle: "Six Foot Games",
+    description: [
+      "Troubleshooted and tracked bugs for PS4/PC versions of the video game Dreadnought",
+      "Implemented pushing/pulling patches and builds to multiple machines",
+      "Successfully assisted the team in releasing the product to Steam and Playstation Store",
+    ],
+    image: "./dreadnought-3.gif",
+    link: "https://store.steampowered.com/app/835860/Dreadnought/",
+    tags: [
+      "Python",
+      "Jira",
+      "Confluence",
+    ],
+    icon: faGamepad,
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
+    title: "Media Developer",
+    subtitle: "Trefny Center",
+    description: [
+      "Renewed the department’s website with a whole new design and functionality, while collaborating with faculty to receive feedback on user experience. Improved the quality of teaching that the faculty can provide at Colorado School of Mines by producing supplemental instructional videos and graphics. Collaborated with faculty to help them achieve a higher productivity and further their teaching courses.",
+    ],
+    image: "./trefnycenter-1.gif",
+    link: "https://trefnycenter.mines.edu/",
+    tags: [
+      "HTML 5",
+      "JavaScript",
+      "Premiere Pro",
+    ],
+    icon: faPhotoVideo,
   },
   {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
+    title: "Software Intern",
+    subtitle: "Deep Space Systems",
+    description: [
+      "Constructed and tested hardware kits that will later be used as final products on the Orion Spacecraft and troubleshooted software problems by controlling cameras remotely through a Linux terminal. Used automation in Linux environments that created and ran bash scripts for command line interaction to run tests and collect results.",
+    ],
+    image: "./deepspacesystems-1.gif",
+    link: "https://www.deepspacesystems.com/",
+    tags: [
+      "Bash Script",
+      "Linux OS",
+      "Automation",
+    ],
+    icon: faRocket,
   },
 ];
 
