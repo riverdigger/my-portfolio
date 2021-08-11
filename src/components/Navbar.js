@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <header className="bg-white sm:sticky top-0 z-10">
       <div className="container mx-auto flex flex-wrap p-5 flex-col sm:flex-row items-center">
-        <a href="#about">
+        <a href="#landing">
           <img
           className="object-cover object-center rounded"
           alt="niall miner"
@@ -15,11 +15,11 @@ export default function Navbar() {
           />
         </a>
         <nav className="sm:mr-auto sm:ml-4 sm:py-1 sm:pl-4 sm:border-l sm:border-gray-700	flex flex-wrap items-center text-base justify-center">
-          <a href="#projects" className="mr-5 hover:text-gray-400">
-            Work
+          <a href="#about" className="mr-5 hover:text-gray-400">
+            About
           </a>
-          <a href="#skills" className="mr-5 hover:text-gray-400">
-            Skills
+          <a href="#work" className="mr-5 hover:text-gray-400">
+            Work
           </a>
           <a href="#testimonials" className="mr-5 hover:text-gray-400">
             Projects

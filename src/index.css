@@ -12,7 +12,7 @@ body {
 }
 
 .shadow-inner-md {
-  --tw-shadow: inset 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+  --tw-shadow: inset 0 8px 10px 0 rgba(0, 0, 0, 0.1);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -25,18 +25,18 @@ body {
   /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
   background: linear-gradient(-45deg, #ffed76, #ffed76, #e54b4b, #507dbc, #507dbc, #69c677, #69c677);
   background-size: 400% 400%;
-  -webkit-animation: Gradient 45s ease infinite;
-  -moz-animation: Gradient 45s ease infinite;
-  animation: Gradient 45s ease infinite;
+  -webkit-animation: Gradient 20s ease infinite;
+  -moz-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
   }
 
   .gradient-backwards {
     /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
     background: linear-gradient(-45deg, #69c677, #69c677, #507dbc, #507dbc, #e54b4b, #ffed76, #ffed76);
     background-size: 400% 400%;
-    -webkit-animation: Gradient 45s ease infinite;
-    -moz-animation: Gradient 45s ease infinite;
-    animation: Gradient 45s ease infinite;
+    -webkit-animation: Gradient 20s ease infinite;
+    -moz-animation: Gradient 20s ease infinite;
+    animation: Gradient 20s ease infinite;
     }
 
 .gradient-text {

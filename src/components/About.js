@@ -1,54 +1,33 @@
 // src/components/About.js
 
 import React from "react";
-import {Animated} from "react-animated-css";
-import { VolumeUpIcon } from "@heroicons/react/solid";
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import Pulse from 'react-reveal/Pulse';
+import Fade from 'react-reveal/Fade';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { experience } from "../data";
 
 export default function About() {
   return (
-    <section id="about" className="h-screen gradient">
-      <div className="container mx-auto flex px-10 pb-20 md:flex-row flex-col items-center justify-center h-full">
-        <div className="lg:flex-grow flex flex-col mb-16 md:mb-0 lg:items-start items-center text-left ml-4">
-          <Animated animationIn="fadeInUp" isVisible={true}>
-            <p className="text-2xl font-medium text-white bg-white bg-opacity-20 transform md:-skew-x-12 md:rounded-none rounded-md md:shadow-none shadow-md md:px-3 px-2">// Nice to meet you, I'm</p>
-          </Animated>
-          <Animated animationIn="fadeIn" isVisible={true}>
-            <div className="flex flex-col justify-start items-center my-7">
-              <div className="flex justify-center items-center mx-4 md:flex-no-wrap flex-wrap">
-                <div className="flex items-center">
-                  <img
-                    className="object-cover object-center rounded h-24"
-                    alt="niall miner"
-                    src="./logo_bracket_left.png"
-                  />
-                  <p className="font-bold md:text-9xl sm:text-8xl text-7xl text-white md:not-italic italic">NIALL&nbsp;</p>
-                </div>
-                <div className="flex items-center">
-                  <p className="font-bold md:text-9xl sm:text-8xl text-7xl text-white md:not-italic italic">MINER</p>
-                  <img
-                    className="object-cover object-center rounded h-24"
-                    alt="niall miner"
-                    src="./logo_bracket_right.png"
-                  />
-                </div>
-              </div>
-            </div>
-          </Animated>
-          <Animated animationIn="fadeInUp" isVisible={true}>
-            <p className="text-2xl max-w-3xl mb-4 font-medium text-white bg-white bg-opacity-20 transform md:-skew-x-12 md:rounded-none rounded-md md:shadow-none shadow-md md:px-3 px-2 md:text-left text-center">// Software developer with experience in full stack development, defect tracking, and database management</p>
-          </Animated>
-          <Animated animationIn="fadeInUp" isVisible={true}>
-            <div className="flex justify-center shadow-md">
-              <a
-                href="#contact"
-                className="inline-flex items-center text-white bg-gray-900 bg-opacity-20 transform -skew-x-12 px-3 hover:bg-gray-800 text-xl">
-                Let's Build Something
-                <ArrowRightIcon className="w-4 h-4 ml-1" />
-              </a>
-            </div>
-          </Animated>
+    <section id="about" className="body-font /*shadow-inner-md*/ section-p">
+      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+        <div className="flex items-center justify-start mb-4">
+          <h4 className="text-5xl ml-1 text-gray-900">A Bit&nbsp;<span className="font-bold">About</span>&nbsp;Me</h4>
+          <div className="flex-grow border-b border-gray-700 mx-8"></div>
         </div>
+        <Fade>
+        <div className="flex">
+          <div className="flex flex-col justify-center items-center w-1/3 grow">
+            <img
+              alt="gallery"
+              className={"w-full object-cover object-center rounded-lg h-full shadow-md"}
+              src="./me.jpg"
+            />
+          </div>
+          <div className="inline flex-col justify-center items-center w-2/3 m-10 text-xl">
+            Hi there! My name is Niall Miner and I'm a Website Developer with experience in <span className="inline font-bold">full stack development</span>, <span className="inline font-bold">defect tracking</span>, <span className="inline font-bold">database management</span>, who has releases for websites, mobile applications, and video games. I'm an avid programmer with a degree in Computer Science from Colorado School of Mines who loves rock climbing, guitar, mountain biking, and being creative.
+          </div>
+        </div>
+        </Fade>
       </div>
     </section>
   );

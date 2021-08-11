@@ -1,22 +1,22 @@
-// src/components/Projects.js
+// src/components/Work.js
 
 import React from "react";
 import Pulse from 'react-reveal/Pulse';
 import Fade from 'react-reveal/Fade';
 import { CodeIcon, DeviceMobileIcon, StarIcon, MusicNoteIcon } from "@heroicons/react/solid";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { projects } from "../data";
+import { experience } from "../data";
 
-export default function Projects() {
+export default function Work() {
   return (
-    <section id="projects" className="bg-gray-200 body-font shadow-inner-md section-p">
+    <section id="work" className="bg-gray-200 body-font section-p">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex items-center justify-start mb-4">
-          <h4 className="text-5xl ml-1 text-gray-900">Work</h4>
+          <h4 className="text-5xl ml-1 text-gray-900"><span className="font-bold">Work</span>&nbsp;Experience</h4>
           <div className="flex-grow border-b border-gray-700 mx-8"></div>
         </div>
         <div className="flex flex-col text-white /*bg-white rounded-lg*/">
-          {projects.map((project, i) => (
+          {experience.map((project, i) => (
             <div className="flex items-center flex-col md:flex-row relative md:h-96 bg-white md:bg-transparent rounded-lg md:rounded-none md:my-14 mb-14">
             <Fade>
               <a
@@ -28,7 +28,7 @@ export default function Projects() {
                     className={"w-full object-cover object-center md:rounded-lg rounded-t-lg h-full md:inset-0 md:absolute"}
                     src={project.image}
                   />
-                <div className={"w-full rounded-lg h-full bg-white opacity-70 /*hover:opacity-0*/ inset-0 absolute"}></div>
+                <div className={"w-full rounded-lg h-full bg-white opacity-70 hover:opacity-0 inset-0 absolute"}></div>
               </a>
               </Fade>
               <div className={"flex flex-col items-center justify-center w-full xl:w-2/5 md:w-7/12 h-full md:absolute grow z-10 md:z-auto bg-white md:bg-transparent rounded-lg md:rounded-none" + (i % 2 == 0 ? " md:left-12" : " md:right-14")}>

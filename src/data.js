@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram, faSpotify } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faGamepad, faPhotoVideo, faRocket } from '@fortawesome/free-solid-svg-icons';
 
-export const projects = [
+export const experience = [
   {
     title: "Ruby Developer",
     subtitle: "WellFence",

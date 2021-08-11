@@ -6,20 +6,22 @@
 
 // src/App.js
 import React from "react";
-import About from "./components/About";
+import Landing from "./components/Landing";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
+import About from "./components/About";
+import Work from "./components/Work";
 import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
 import Socials from "./components/Socials";
 
 export default function App() {
   return (
-    <main className="text-black bg-white body-font">
+    <main className="text-black bg-gray-200 body-font">
       <Navbar />
+      <Landing />
       <About />
-      <Projects />
+      <Work />
       {/*<Skills />
       <Testimonials />
       <Contact />*/}
