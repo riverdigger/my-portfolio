@@ -21,9 +21,6 @@ export default function Navbar() {
           <a href="#work" className="mr-5 hover:text-gray-400">
             Work
           </a>
-          <a href="#testimonials" className="mr-5 hover:text-gray-400">
-            Projects
-          </a>
           <a href="#contact" className="mr-5 hover:text-gray-400">
             Contact
           </a>
