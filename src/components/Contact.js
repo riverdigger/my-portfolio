@@ -36,8 +36,8 @@ export default function Contact() {
         <div className="flex items-center sm:justify-start justify-between mb-4">
           <h4 className="text-5xl ml-1 text-gray-200"><span className="hidden sm:inline">Get in&nbsp;</span><span className="font-bold">Contact</span></h4>
           <div className="flex-grow border-b border-gray-700 mx-8 hidden sm:block"></div>
-          <div className="transform skew-x-12 bg-red-400 w-2">&nbsp;</div>
-          <div className="transform skew-x-12 bg-green-400 w-2">&nbsp;</div>
+          <div className="transform skew-x-12 bg-red-400 w-2 sm:mr-1 mr-0">&nbsp;</div>
+          <div className="transform skew-x-12 bg-green-400 w-2 sm:mr-1 mr-0">&nbsp;</div>
           <div className="transform skew-x-12 bg-blue-400 w-2">&nbsp;</div>
         </div>
         <Fade>

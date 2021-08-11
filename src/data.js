@@ -29,7 +29,7 @@ export const experience = [
       "Implemented pushing/pulling patches and builds to multiple machines",
       "Successfully assisted the team in releasing the product to Steam and Playstation Store",
     ],
-    image: "./dreadnought-3.gif",
+    image: "./dreadnought-1.gif",
     link: "https://store.steampowered.com/app/835860/Dreadnought/",
     tags: [
       "Python",
