@@ -12,6 +12,9 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Work from "./components/Work";
 import Socials from "./components/Socials";
+import ReactGA from 'react-ga';
+const TRACKING_ID = "G-QE2WZGJ9SF"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 export default function App() {
   return (
