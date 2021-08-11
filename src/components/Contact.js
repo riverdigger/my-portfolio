@@ -53,6 +53,7 @@ export default function Contact() {
             Email
           </a>
         </div>
+        <p className="mt-24 text-center text-white">Made by Niall Miner with ReactJS</p>
         {/*<form
           netlify
           name="contact"
