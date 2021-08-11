@@ -7,8 +7,8 @@ import { socials } from "../data";
 
 export default function Socials() {
   return (
-    <div className="bg-white lg:sticky lg:top-0 lg:z-10">
-      <ul className="lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:z-10 m-4 flex lg:flex-col flex-row items-center justify-center">
+    <div className="bg-white lg:sticky lg:top-0 lg:z-10 pt-2 lg:pt-0">
+      <ul className="lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:z-10 m-4 flex lg:flex-col flex-row items-center lg:justify-end justify-center lg:py-6">
         <li className="mb-4 text-white">
           <Animated animationIn="fadeInLeft" isVisible={true}>
             <div className="h-6 lg:border-l border-t border-white"></div>
@@ -26,11 +26,6 @@ export default function Socials() {
             </Animated>
           </li>
         ))}
-        <li className="mb-4 text-white">
-          <Animated animationIn="fadeInLeft" isVisible={true}>
-            <div className="h-6 lg:border-l border-t border-white"></div>
-          </Animated>
-        </li>
       </ul>
     </div>
   );

@@ -11,8 +11,6 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Work from "./components/Work";
-import Skills from "./components/Skills";
-import Testimonials from "./components/Testimonials";
 import Socials from "./components/Socials";
 
 export default function App() {
@@ -23,8 +21,8 @@ export default function App() {
       <About />
       <Work />
       {/*<Skills />
-      <Testimonials />
-      <Contact />*/}
+      <Testimonials />*/}
+      <Contact />
       <Socials />
     </main>
   );

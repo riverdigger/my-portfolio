@@ -7,6 +7,14 @@ body {
   font-family: 'Saira', sans-serif;
 }
 
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: calc(50%) solid transparent;
+  border-right: calc(50%) solid transparent;
+  border-top: 60px solid #f00;
+}
+
 .section-p {
   scroll-margin-top: 5rem;
 }
@@ -21,23 +29,32 @@ body {
 .grow { transition: all .7s ease-in-out; }
 .grow:hover { transform: scale(1.05); }
 
+.gradient-sm {
+  /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
+  background: linear-gradient(-45deg, #ffed76, #e54b4b, #507dbc, #69c677);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 17s ease infinite;
+  -moz-animation: Gradient 17s ease infinite;
+  animation: Gradient 17s ease infinite;
+  }
+
 .gradient {
   /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
   background: linear-gradient(-45deg, #ffed76, #ffed76, #e54b4b, #507dbc, #507dbc, #69c677, #69c677);
   background-size: 400% 400%;
-  -webkit-animation: Gradient 20s ease infinite;
-  -moz-animation: Gradient 20s ease infinite;
-  animation: Gradient 20s ease infinite;
+  -webkit-animation: Gradient 17s ease infinite;
+  -moz-animation: Gradient 17s ease infinite;
+  animation: Gradient 17s ease infinite;
   }
 
-  .gradient-backwards {
-    /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
-    background: linear-gradient(-45deg, #69c677, #69c677, #507dbc, #507dbc, #e54b4b, #ffed76, #ffed76);
-    background-size: 400% 400%;
-    -webkit-animation: Gradient 20s ease infinite;
-    -moz-animation: Gradient 20s ease infinite;
-    animation: Gradient 20s ease infinite;
-    }
+.gradient-backwards {
+  /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
+  background: linear-gradient(-45deg, #69c677, #69c677, #507dbc, #507dbc, #e54b4b, #ffed76, #ffed76);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 17s ease infinite;
+  -moz-animation: Gradient 17s ease infinite;
+  animation: Gradient 17s ease infinite;
+  }
 
 .gradient-text {
   /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
@@ -45,9 +62,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400% 400%;
-  -webkit-animation: Gradient 45s ease infinite;
-  -moz-animation: Gradient 45s ease infinite;
-  animation: Gradient 45s ease infinite;
+  -webkit-animation: Gradient 17s ease infinite;
+  -moz-animation: Gradient 17s ease infinite;
+  animation: Gradient 17s ease infinite;
   }
 
 .paused {
