@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faInstagram, faSpotify } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faGamepad, faPhotoVideo, faRocket } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faInstagram, faSpotify, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faCode, faGamepad, faPhotoVideo, faRocket, faSearch, faExternalLinkAlt, faMusic } from '@fortawesome/free-solid-svg-icons';
 
 export const experience = [
   {
@@ -71,6 +71,78 @@ export const experience = [
     icon: faRocket,
   },
 ];
+
+export const projects = [
+  {
+    title: "Order PDF Analyzer",
+    description: "Drilling Tools Intl online shopping API add-on to make it easier for part order creation. This app accepts a Schlumberger order PDF and parses the file to show resulting part list and similar items for a DTI shopping cart.",
+    link: "https://compass-uploader.herokuapp.com/",
+    links: [
+      {link: "https://compass-uploader.herokuapp.com/", icon: faExternalLinkAlt},
+    ],
+    tags: [
+      "OCR",
+      "Ruby",
+    ],
+    icon: faSearch,
+    image: "./compass_project.png",
+  },
+  {
+    title: "Top-Down Pixel RPG",
+    description: "Role playing game written in the Godot engine with over 1,249,500 different possible character combinations. Utilizes UI/UX pixel art as well as Zelda-like game mechanics. Still in development!",
+    link: "https://github.com/riverdigger/WindFall",
+    links: [
+      {link: "https://github.com/riverdigger/WindFall", icon: faGithub},
+    ],
+    tags: [
+      "Godot",
+      "Pixel Art",
+    ],
+    icon: faSearch,
+    image: "./run_left.gif",
+  },
+  {
+    title: "Drawing Mobile App",
+    description: "Mobile app with mobile drawing in mind, while still keeping things simple. Coded in Android Studio, Pixelli is an app that allows for local saving to your device, as well as Pixelli’s own gallery in app.",
+    link: "https://www.youtube.com/watch?v=mKBNUeW3T1Q",
+    links: [
+      {link: "https://www.youtube.com/watch?v=mKBNUeW3T1Q", icon: faExternalLinkAlt},
+    ],
+    tags: [
+      "Android Studio",
+    ],
+    icon: faSearch,
+    image: "./pixelli.png",
+  },
+  {
+    title: "Arduino Music Box",
+    description: "Based off of the popular knife wielding tentacle box, I added a music box feature which shows audio output levels and has play/pause functionality. Watch out for the knife...",
+    link: "https://github.com/alanchampion/DJ-Doomba",
+    links: [
+      {link: "https://github.com/alanchampion/DJ-Doomba", icon: faGithub},
+    ],
+    tags: [
+      "Python",
+      "Arduino",
+    ],
+    icon: faSearch,
+    image: "./Music-icon.png",
+  },
+  {
+    title: "Blinn-Phong Research",
+    description: "Research paper about a depth based cel shader program written in OpenGL. The program optimizes render performance by lowering the polygon count of objects further away from the camera.",
+    link: "./graphics_project_proposal.pdf",
+    links: [
+      {link: "./graphics_project_proposal.pdf", icon: faExternalLinkAlt},
+    ],
+    tags: [
+      "OpenGL",
+      "Blinn-Phong",
+    ],
+    icon: faSearch,
+    image: "./cel_shaded.png",
+  },
+].sort( () => .5 - Math.random() );
 
 export const socials = [
   {

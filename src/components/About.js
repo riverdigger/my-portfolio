@@ -23,7 +23,7 @@ export default function About() {
             <img
               alt="gallery"
               className={"w-full object-cover object-center rounded-lg h-full shadow-md"}
-              src="./me.jpg"
+              src="./me.png"
             />
           </div>
           <div className="inline flex-col justify-center items-center md:w-2/3 w-full m-10 text-xl">

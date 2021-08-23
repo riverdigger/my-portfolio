@@ -3,7 +3,6 @@
 import React from "react";
 import Pulse from 'react-reveal/Pulse';
 import Fade from 'react-reveal/Fade';
-import { CodeIcon, DeviceMobileIcon, StarIcon, MusicNoteIcon } from "@heroicons/react/solid";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { experience } from "../data";
 
