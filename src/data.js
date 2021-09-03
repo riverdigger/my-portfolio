@@ -74,6 +74,20 @@ export const experience = [
 
 export const projects = [
   {
+    title: "NFT Website",
+    description: "Created a ReactJS website to host all of the artwork for an NFT I made using my pixel art assets. These collectable villagers now have a place to live!",
+    link: "https://www.windfallvillage.com/",
+    links: [
+      {link: "https://www.windfallvillage.com/", icon: faExternalLinkAlt},
+    ],
+    tags: [
+      "ReactJS",
+      "NFT",
+    ],
+    icon: faSearch,
+    image: "./lineup.png",
+  },
+  {
     title: "Order PDF Analyzer",
     description: "Drilling Tools Intl online shopping API add-on to make it easier for part order creation. This app accepts a Schlumberger order PDF and parses the file to show resulting part list and similar items for a DTI shopping cart.",
     link: "https://compass-uploader.herokuapp.com/",
@@ -115,20 +129,6 @@ export const projects = [
     image: "./pixelli.png",
   },
   {
-    title: "Arduino Music Box",
-    description: "Based off of the popular knife wielding tentacle box, I added a music box feature which shows audio output levels and has play/pause functionality. Watch out for the knife...",
-    link: "https://github.com/alanchampion/DJ-Doomba",
-    links: [
-      {link: "https://github.com/alanchampion/DJ-Doomba", icon: faGithub},
-    ],
-    tags: [
-      "Python",
-      "Arduino",
-    ],
-    icon: faSearch,
-    image: "./Music-icon.png",
-  },
-  {
     title: "Blinn-Phong Research",
     description: "Research paper about a depth based cel shader program written in OpenGL. The program optimizes render performance by lowering the polygon count of objects further away from the camera.",
     link: "./graphics_project_proposal.pdf",
@@ -142,7 +142,7 @@ export const projects = [
     icon: faSearch,
     image: "./cel_shaded.png",
   },
-].sort( () => .5 - Math.random() );
+];
 
 export const socials = [
   {
