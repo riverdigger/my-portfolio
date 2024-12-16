@@ -1,6 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
+  "homepage": "https://riverdigger.github.io/my-portfolio",
   "private": true,
   "dependencies": {
     "@craco/craco": "^5.9.0",
@@ -22,6 +23,8 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
@@ -33,5 +36,7 @@
       "react-app/jest"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
 }
